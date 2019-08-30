@@ -23,6 +23,5 @@ node {
    } 
    stage('Deploy to Test') {
    } 
-   stage('Deploy to Prod') {
-   } 
+   
 }
