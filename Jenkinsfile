@@ -19,7 +19,8 @@ node {
    } 
    stage('Docker Image') {
    } 
-  
+    stage('Deploy to Dev') {
+   } 
    stage('Deploy to Prod') {
    } 
 }
