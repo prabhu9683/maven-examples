@@ -14,6 +14,11 @@ node {
      }  
    }
    stage('Code Quality') {
+      sh 'mvn sonar:sonar \
+         -Dsonar.projectKey=mavenex \
+         -Dsonar.organization=itrainprabhu \
+         -Dsonar.host.url=https://sonarcloud.io \
+         -Dsonar.login=5870870dfe1749ce1b15deb7abb66ceb2622b3bd'    
    } 
    stage('Archive to Jfrog') {
    } 
