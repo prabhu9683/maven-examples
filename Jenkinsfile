@@ -14,7 +14,7 @@ node {
      }  
    }
    stage('Code Quality') {
-      sh 'mvn sonar:sonar \
+      sh'mvn sonar:sonar \
          -Dsonar.projectKey=mavenex \
          -Dsonar.organization=itrainprabhu \
          -Dsonar.host.url=https://sonarcloud.io \
